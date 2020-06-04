@@ -1,8 +1,14 @@
-def show_status(lst, low, high, mid):
-    print(*lst[low : high+1], end='\t\t')
-    print("Mid = {}".format(lst[mid]))
+"""
+The binary_search function takes a sorted array and an item. If the
+item is in the array, the function returns its position.
 
+Time complexity:
+Best-case:      O(1)
+Average-case:   O(log n)
+Worst-case:     O(log n)
 
+Worst-case space complexity: O(1)
+"""
 def binary_search(lst, item):
     low, high = 0, len(lst)-1
 
@@ -23,8 +29,13 @@ def binary_search(lst, item):
     return None     # Item not found
 
 
+def show_status(lst, low, high, mid):
+    print(*lst[low : high+1], end='\t\t')
+    print("Mid = {}".format(lst[mid]))
+
+
 lst = [1, 3, 6, 9, 16, 19, 23, 24]
 item = 23
 print("\nGiven sorted Array: {}\nItem: {}\n".format(lst, item))
 print("Binary Sorting:")
-print("\nIndex found:", binary_search(lst, item))
+print("\nItem Index:", binary_search(lst, item))
