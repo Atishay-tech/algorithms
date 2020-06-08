@@ -1,5 +1,6 @@
 """
 """
+
 def print_status(lower: list, pivot: int, upper: list) -> None:
 	print("Pivot:", pivot)
 	print("Lower:", *lower)
