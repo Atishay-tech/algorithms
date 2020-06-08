@@ -1,4 +1,16 @@
 """
+QuickSort is a highly efficient sorting algorithm based on Divide and Conquer approach.
+A large array is partitioned into two arrays one of which holds values smaller than the specified value, say pivot,
+based on which the partition is made and another array holds values greater than the pivot value.
+
+Quicksort partitions an array and then calls itself recursively twice to sort the two resulting subarrays.
+
+Time complexity:
+Best-case:      O(n*logn)
+Average-case:   O(n*logn)
+Worst-case:     O(n^2)
+
+Worst-case space complexity: O(n)
 """
 
 def print_status(lower: list, pivot: int, upper: list) -> None:
