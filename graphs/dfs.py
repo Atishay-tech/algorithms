@@ -9,7 +9,6 @@ for other unmarked nodes and traverse them.
 Time complexity:	O(V+E)
 Space complexity:	O(V)
 """
-from graph import graph, root
 
 def search(graph, item):
 	search_queue = list()
@@ -32,11 +31,28 @@ def search(graph, item):
 				searched.add(i)
 				search_queue += graph[i]
 
-				print("Add", graph[i])
+				print("Add", graph[
+					i])
 				print("Search queue", *search_queue)
 		else:
 			print("Already searched")
 	
 	return False
+
+
+# Graph data structure implemented using dictionary.
+graph = {}
+graph[1] = [2, 3, 4, 5]
+graph[2] = [4, 6, 8, 10]
+graph[3] = [6, 9]
+graph[4] = [8]
+graph[5] = [10]
+graph[6] = []
+graph[7] = []
+graph[8] = []
+graph[9] = []
+graph[10] = []
+root = 1
+
 
 search(graph, 9)
