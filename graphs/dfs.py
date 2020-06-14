@@ -40,7 +40,7 @@ def search(graph, item):
 	return False
 
 
-# Graph data structure implemented using dictionary.
+# Unweighted Graph implemented using dictionary.
 graph = {}
 graph[1] = [2, 3, 4, 5]
 graph[2] = [4, 6, 8, 10]
