@@ -1,2 +1,2 @@
-# algorithms
-Some basic algorithms implemented various languages.
+# Algorithms
+Some basic algorithms implemented in various languages.
