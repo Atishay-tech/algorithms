@@ -1,2 +1,2 @@
-# Python-Algorithms
-Some basic algorithms implemented in python
+# algorithms
+Some basic algorithms implemented various languages.
